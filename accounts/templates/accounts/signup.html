@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{# at the terminal, run pip install django-bootstrap4 #}
+{% load bootstrap4 %}
+
+{% block content %}
+<style>
+  body {
+      background: url('https://th.bing.com/th/id/R.6d21a9efc0e59e71d2a9143a6b996234?rik=WBcGuoCckC3G8g&pid=ImgRaw&r=0') no-repeat center center fixed;
+      background-size: cover;
+  }
+  
+</style>
+<div class="container">
+  <h1>Sign Up</h1>
+  <form method="POST" class="form">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    {% buttons %}
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    {% endbuttons %}
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,105 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f9fa;
+  color: #2c3e50;
+}
+
+.navbar {
+  background-color: #8e44ad;
+}
+
+.navbar-brand {
+  color: #FFFFFF !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #FFFFFF !important;
+  font-size: 1.1rem;
+}
+
+.nav-link:hover {
+  color: #c39bd3 !important;
+}
+
+.btn {
+  background: linear-gradient(45deg, #1abc9c, #16a085);
+  border: none;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.4s;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #16a085, #1abc9c);
+}
+
+.container {
+  margin-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #8e44ad;
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-danger {
+  background-color: #fceae8;
+  border-color: #f5b7b1;
+  color: #e74c3c;
+}
+
+.alert-success {
+  background-color: #e8f8f5;
+  border-color: #a3e4d7;
+  color: #2ecc71;
+}
+
+.alert-warning {
+  background-color: #fcf3cf;
+  border-color: #f9e79f;
+  color: #f1c40f;
+}
+
+.card {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #8e44ad;
+}
+
+.card-text {
+  color: #2c3e50;
+}
+
+.form-control {
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+}
+
+.form-control:focus {
+  border-color: #8e44ad;
+  box-shadow: 0 0 0 0.2rem rgba(142, 68, 173, 0.25);
+}
+
+

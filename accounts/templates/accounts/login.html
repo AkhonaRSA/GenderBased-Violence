@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{# at the terminal, run pip install django-bootstrap4 #}
+{% load bootstrap4 %}
+
+{% block content %}
+<style>
+    body {
+        background-image: url('https://www.dailymaverick.co.za/wp-content/uploads/MC-EasternCapeGBV-Estelle-main-option-2.jpg?w=1280');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+    }
+  
+    
+</style>
+
+<div class="container" style="max-width: 500px; margin: 0 auto; padding: 20px; background-color: #1b151385; border: 1px solid #060810; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+  <h1 style="text-align: center; color: #ececec; margin-bottom: 20px;">Login</h1>
+  <form method="POST" class="form" style="display: flex; flex-direction: column;">
+    {% csrf_token %}
+    <div style="margin-bottom: 15px;">
+      {% bootstrap_form form %}
+    </div>
+    <div style="text-align: center;">
+      {% buttons %}
+        <button type="submit" class="btn btn-primary" style="padding: 10px 20px; background-color: #00000075; border: none; border-radius: 5px; font-size: 16px;">Login</button>
+      {% endbuttons %}
+    </div>
+  </form>
+</div>
+
+{% endblock %}
+

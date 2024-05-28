@@ -1,0 +1,38 @@
+
+
+
+<style>
+	body {
+        overflow-y: scroll;
+		background-image: url(' https://ameliavirtualcare.com/wp-content/uploads/2021/11/Dia-Internacional-para-la-Eliminacion-de-la-Violencia-de-Genero-1.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+    }
+
+</style>
+<div style="max-height: 400px; overflow-y: auto;">
+    <div class="media" style="margin-bottom: 20px; border: 1px solid #007bff; border-radius: 8px; padding: 15px; background-color: #e7f1fb;">
+        <h3 class="mr-5" style="margin-right: 20px;"><a href="{% url 'posts:for_user' username=post.user.username %}" style="text-decoration: none; color: #007bff;"><strong>@{{ post.user.username }}</strong></a></h3>
+
+        <div class="media-body">
+            <strong style="display: block; margin-bottom: 5px; color: #007bff; font-size: 1.2em;">{{ post.user.username }}</strong>
+            <h5 style="margin-bottom: 10px; color: #333; font-size: 1.1em;">{{ post.message_html|safe }}</h5>
+            <time class="time" style="display: block; margin-bottom: 10px; color: #6c757d; font-size: 0.9em;"><a href="{% url 'posts:single' username=post.user.username pk=post.pk %}" style="text-decoration: none; color: #007bff;">{{ post.created_at }}</a></time>
+            {% if post.group %}
+                <span class="group-name" style="display: block; margin-bottom: 10px; color: #6c757d; font-size: 0.9em;">in <a href="#" style="text-decoration: none; color: #007bff;">{{ post.group.name }}</a></span>
+            {% endif %}
+        </div>
+
+        <div class="media-footer">
+            {% if user.is_authenticated and post.user == user and not hide_delete %}
+                <a href="{% url 'posts:delete' pk=post.pk %}" title="delete" style="text-decoration: none; color: #dc3545; margin-right: 10px;">
+                    <span class="fa fa-remove" aria-hidden="true"></span>
+                    <span class="icon-label" style="margin-left: 5px; color: #dc3545;">Delete</span>
+                </a>
+            {% endif %}
+        </div>
+    </div>
+    <!-- Add more comment divs as needed -->
+</div>
