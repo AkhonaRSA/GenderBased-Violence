@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Internal CSS for styling -->
+<style>
+    /* Ensure the page is scrollable */
+    body {
+        overflow-y: scroll;
+        background-image: url('https://th.bing.com/th/id/OIP.9bmrpwaZl1u4_MNMSHKRXQAAAA?rs=1&pid=ImgDetMain');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Container for the educational content */
+    .education-container {
+        background-color: #f7f7f7;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+
+    /* Title styling */
+    .education-title {
+        color: #2980b9;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Section styling */
+    .education-section {
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        color: #2c3e50;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .section-content {
+        color: #34495e;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    /* Highlight important text */
+    .important {
+        color: #1e4aa8ba;
+        font-weight: bold;
+    }
+
+    /* Contact info styling */
+    .contact-info {
+        background-color: #dff9fb;
+        padding: 15px;
+        border-left: 5px solid #1abc9c;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+    .contact-title {
+        color: #1abc9c;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .contact-details {
+        color: #34495e;
+        font-size: 1.1rem;
+    }
+</style>
+
+<!-- Educational content container -->
+<div class="container education-container">
+    <h1 class="education-title">Understanding Gender-Based Violence Against Males</h1>
+
+    <!-- Section 1: What is Gender-Based Violence Against Males? -->
+    <div class="education-section">
+        <h2 class="section-title">What is Gender-Based Violence Against Males?</h2>
+        <p class="section-content">
+            Gender-based violence (GBV) against males refers to harmful acts directed at men and boys based on their gender.
+            This form of violence is often underreported and can include physical, sexual, and emotional abuse, as well as
+            economic deprivation. Societal norms and stereotypes about masculinity often discourage male victims from seeking help.
+        </p>
+    </div>
+
+    <!-- Section 2: Impact of Gender-Based Violence on Males -->
+    <div class="education-section">
+        <h2 class="section-title">Impact of Gender-Based Violence on Males</h2>
+        <p class="section-content">
+            The impact of GBV on males can be profound and long-lasting. Victims may experience physical injuries, mental health issues
+            such as depression and anxiety, and social stigma. The reluctance to report abuse can lead to a lack of support and resources
+            for male victims, further exacerbating their suffering.
+        </p>
+    </div>
+
+    <!-- Section 3: How to Seek Help and Support -->
+    <div class="education-section">
+        <h2 class="section-title">How to Seek Help and Support</h2>
+        <p class="section-content">
+            <span class="important">1. Break the Silence:</span> It is crucial to speak out and break the silence surrounding male victimization.
+            Sharing your experiences with trusted friends, family, or support groups can be the first step towards healing.
+        </p>
+        <p class="section-content">
+            <span class="important">2. Access Resources:</span> Look for local organizations, hotlines, and support groups that specifically
+            cater to male victims of GBV. These resources can provide the necessary support and guidance.
+        </p>
+        <p class="section-content">
+            <span class="important">3. Legal Protection:</span> Understanding your legal rights can empower you to take action against the abuser.
+            Many regions have laws in place to protect victims of GBV, regardless of gender.
+        </p>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+        <h2 class="contact-title">Need Help? Contact Us</h2>
+        <p class="contact-details">
+            If you or someone you know is experiencing gender-based violence, please reach out to our support team for help.
+            <br><br>
+            <strong>Hotline:</strong>0800 428 428<br>
+            <strong>SMS 'Help':</strong>31531<br>
+            <strong>Skype Address:</strong>HelpmeGbv<br>
+            <strong>Please Call Me:</strong>*120*7867#
+        </p>
+    </div>
+</div>
+
+{% endblock %}

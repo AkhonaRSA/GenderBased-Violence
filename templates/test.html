@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Internal CSS for styling -->
+<style>
+    body {
+        background: url('https://www.righttocare.org/wp-content/uploads/2020/06/gender-based-violence-banner.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    .centered-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-top: -50px;
+    }
+    .card-custom {
+        width: 100%;
+        max-width: 800px;  /* Increased the max-width for a larger container */
+        background-color: rgba(44, 62, 80, 0.9);
+        color: #ecf0f1;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        text-align: center;
+        min-height: 100px;  
+    }
+    .btn-custom {
+        background-color: #2980b9;
+        border-color: #2980b9;
+    }
+    .btn-custom:hover {
+        background-color: #1a5276;
+        border-color: #1a5276;
+    }
+</style>
+
+<div class="container centered-container">
+  <div class="card card-custom">
+    <div class="card-body">
+      <h5 class="card-title">You are now logged in!</h5>
+      <p class="card-text">Welcome to our platform. Explore and engage with various groups and activities.</p>
+      <a href="{% url 'groups:all'%}" class="btn btn-primary btn-custom">Go to Groups</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+

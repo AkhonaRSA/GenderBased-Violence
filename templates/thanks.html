@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Internal CSS for styling -->
+<style>
+     body {
+        background: url('https://www.righttocare.org/wp-content/uploads/2020/06/gender-based-violence-banner.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    .centered-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+    }
+    .centered-text {
+        font-size: 3rem; /* Adjust the font size as needed */
+        margin-top: -70px; /* Optional: Adds some space at the top */
+        color: #444; /* Optional: Changes the text color */
+    }
+    .text-container {
+        background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: 20px auto;
+        text-align: center;
+    }
+   
+    p {
+        font-size: 1.2rem; /* Adjust the font size as needed */
+        color: #555; /* Optional: Changes the text color */
+    }
+</style>
+
+<div class="centered-content">
+    <h1 class="centered-text">Thanks for visiting! Come back soon!</h1>
+    <div class="text-container">
+        <p>By opening up conversations, we can raise awareness, support survivors, and drive change. Let's break the silence together. Speak up, share your stories, and listen with compassion. Together, we can create a safer, more inclusive world for everyone.</p>
+    </div>
+</div>
+
+{% endblock %}
+

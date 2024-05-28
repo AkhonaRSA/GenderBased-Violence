@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+    body {
+        background-image: url('https://www.righttocare.org/wp-content/uploads/2020/06/gender-based-violence-banner.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+    }
+
+    .main-container {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 50px;
+    }
+
+    .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card-title {
+        color: #8e44ad;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        color: #2c3e50;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .btn-primary {
+        background-color: #8e44ad;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .btn-primary:hover {
+        background-color: #c39bd3;
+        color: #fff;
+    }
+    .my-4 {
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    h1 {
+        color: #4a235a; /* Dark purple color */
+    }
+
+    @media (max-width: 767.98px) {
+        .row .col-md-6 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .row .col-md-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+</style>
+
+<div class="container main-container">
+    <h1 class="text-center my-4">Welcome to NoViolence!</h1>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 text-center">
+                <div class="card-body d-flex flex-column">
+                    <h2 class="card-title">For Females</h2>
+                    <p class="card-text flex-grow-1">Learn about gender-based violence and how to stay safe.</p>
+                    <a href="{% url 'female_education' %}" class="btn btn-primary mt-auto">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 text-center">
+                <div class="card-body d-flex flex-column">
+                    <h2 class="card-title">For Males</h2>
+                    <p class="card-text flex-grow-1">Understand gender-based violence and how to support and respect women.</p>
+                    <a href="{% url 'male_education' %}" class="btn btn-primary mt-auto">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+

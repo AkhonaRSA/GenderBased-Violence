@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Internal CSS for styling -->
+<style>
+    /* Ensure the page is scrollable */
+    body {
+        overflow-y: scroll;
+        background-image: url('https://th.bing.com/th/id/OIP.yZR6n6WlCXOD4y09Mi0QygAAAA?rs=1&pid=ImgDetMain');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Container for the educational content */
+    .education-container {
+        background-color: #f7f7f7;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+
+    /* Title styling */
+    .education-title {
+        color: #af127d95;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Section styling */
+    .education-section {
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        color: #2c3e50;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .section-content {
+        color: #34495e;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    /* Highlight important text */
+    .important {
+        color: #b331a1bd;
+        font-weight: bold;
+    }
+
+    /* Contact info styling */
+    .contact-info {
+        background-color: #a32eb361;
+        padding: 15px;
+        border-left: 5px solid #cb4ac637;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+    .contact-title {
+        color: #a1226cb7;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .contact-details {
+        color: #34495e;
+        font-size: 1.1rem;
+    }
+</style>
+
+<!-- Educational content container -->
+<div class="container education-container">
+    <h1 class="education-title">Understanding Gender-Based Violence</h1>
+
+    <!-- Section 1: What is Gender-Based Violence? -->
+    <div class="education-section">
+        <h2 class="section-title">What is Gender-Based Violence?</h2>
+        <p class="section-content">
+            Gender-based violence (GBV) refers to harmful acts directed at an individual based on their gender.
+            It is rooted in gender inequality, the abuse of power, and harmful norms. GBV can include sexual,
+            physical, mental, and economic harm inflicted in public or in private. Examples include domestic
+            violence, sexual harassment, rape, human trafficking, and harmful practices such as female genital
+            mutilation and child marriage.
+        </p>
+    </div>
+
+    <!-- Section 2: Impact of Gender-Based Violence -->
+    <div class="education-section">
+        <h2 class="section-title">Impact of Gender-Based Violence</h2>
+        <p class="section-content">
+            The impact of GBV can be devastating and long-lasting. Victims may suffer from physical injuries,
+            mental health issues such as depression and anxiety, and social stigma. GBV can also have severe
+            economic consequences, including loss of income and financial dependence on the abuser.
+            It is important to recognize that GBV affects not only the victim but also families, communities,
+            and society as a whole.
+        </p>
+    </div>
+
+    <!-- Section 3: How to Stay Safe -->
+    <div class="education-section">
+        <h2 class="section-title">How to Stay Safe</h2>
+        <p class="section-content">
+            <span class="important">1. Know Your Rights:</span> Understanding your legal rights can empower you
+            to take action against abuse. Familiarize yourself with local laws and resources available for GBV victims.
+        </p>
+        <p class="section-content">
+            <span class="important">2. Create a Safety Plan:</span> If you are in an abusive situation, having a safety
+            plan can help you escape safely. This includes having a trusted friend or relative to contact, knowing where
+            to go, and keeping emergency numbers handy.
+        </p>
+        <p class="section-content">
+            <span class="important">3. Seek Support:</span> Reach out to support groups, hotlines, and local organizations
+            that can provide assistance and guidance. Do not hesitate to ask for help.
+        </p>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+        <h2 class="contact-title">Need Help? Contact Us</h2>
+        <p class="contact-details">
+            If you or someone you know is experiencing gender-based violence, please reach out to our support team for help.
+            <br><br>
+            <strong>Hotline:</strong>0800 428 428<br>
+            <strong>SMS 'Help':</strong>31531<br>
+            <strong>Skype Address:</strong>HelpmeGbv<br>
+            <strong>Please Call Me:</strong>*120*7867#
+        </p>
+    </div>
+</div>
+
+{% endblock %}
+
+
